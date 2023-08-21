@@ -57,7 +57,7 @@ function App() {
   };
   return (
     <Container>
-      <AppLabel>React Weather App</AppLabel>
+      <AppLabel>Climate Canvas</AppLabel>
       {city && weather ? (
         <Weather weather={weather} city={city} />
       ) : (
