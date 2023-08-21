@@ -39,7 +39,7 @@ const Container = styled.div`
 const AppLabel = styled.span`
   color: black;
   margin: 20px auto;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 `;
 
