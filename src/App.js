@@ -3,6 +3,8 @@ import Axios from "axios";
 import styled from "styled-components";
 import City from './components/City';
 import Weather from './components/Weather';
+import Footer from "./components/Footer";
+import Forecast from "./components/Forecast";
 
 export const WeatherIcons = {
   "01d": "./components/images/sunny.svg",
@@ -40,13 +42,7 @@ const AppLabel = styled.span`
   font-size: 30px;
   font-weight: bold;
 `;
-const CloseButton = styled.span`
-  padding: 2px 3px;
-  background-color: black;
-  border-radius: 50%;
-  color: white;
-  position: absolute;
-`;
+
 
 function App() {
   const [city, updateCity] = useState();
@@ -57,6 +53,7 @@ function App() {
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fe4feefa8543e06d4f3c66d92c61b69c`,
     );
     updateWeather(response.data);
+    
   };
   return (
     <Container>
@@ -66,6 +63,7 @@ function App() {
       ) : (
         <City updateCity={updateCity} fetchWeather={fetchWeather} />
       )}
+      <Footer />
     </Container>
   );
 }
