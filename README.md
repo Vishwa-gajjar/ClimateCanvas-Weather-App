@@ -1,6 +1,6 @@
 # Deployed on Netlify
 
-[https://climatecanvas.netlify.app/](https://climatecanvas.netlify.app/)
+[https://climate-canvas.netlify.app/](https://climate-canvas.netlify.app/)
 
 ## API Used
 
